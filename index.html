@@ -33,7 +33,7 @@
                     </div>
                     <div class="next" @click="slideUp">
                     </div>
-                    <div class="thumb" v-for="(el,index) in slides">
+                    <div :class="[slideIndex === index?'thumb active':'thumb']" v-for="(el,index) in slides">
                         <img :src="el.image" :alt="el.title" />
                     </div>
                     <!-- <div class="thumb">
@@ -56,7 +56,7 @@
     </div>
 
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
-    <script src="./js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

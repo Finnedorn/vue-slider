@@ -35,17 +35,17 @@ const miaApp = createApp({
     },
     methods: {
         slideUp() {
-            if(slideIndex === this.slides.length -1) {
-                slideIndex = 0;
+            if(this.slideIndex === this.slides.length -1) {
+                this.slideIndex = 0;
             } else {
-                slideIndex++;
-            };
+                this.slideIndex++;
+            }
         },
         slideDown() {
-            if(slideIndex === 0) {
-                slideIndex = this.slides.length -1;
+            if(this.slideIndex === 0) {
+                this.slideIndex = this.slides.length -1;
             } else {
-                slideIndex--;
+                this.slideIndex--;
             }
         }
     }
