@@ -103,3 +103,20 @@ oppure i caratteri ∧ (&and;) e ∨ (&or;)
     left: 50%;
     transform: translate(-50%) rotate(135deg);
 }
+
+.whitebar {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background-color: rgba(215, 215, 215, 0.688);
+    height: 10px;
+    width: 0%;
+    animation-name: bar;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bar {
+    from {width: 0%;}
+    to {width: 100%;}
+}

@@ -26,6 +26,7 @@
                             {{slides[slideIndex].text}}
                         </p>
                     </div>
+                    <div class="whitebar"></div>
                 </div>
 
                 <div class="thumbs">
@@ -33,8 +34,8 @@
                     </div>
                     <div class="next" @click="slideUp">
                     </div>
-                    <div :class="[slideIndex === index?'thumb active':'thumb']" v-for="(el,index) in slides">
-                        <img :src="el.image" :alt="el.title" />
+                    <div :class="[slideIndex === index ?'thumb active':'thumb']" v-for="(el,index) in slides" @click="syncIndex">
+                        <img :src="el.image" :alt="el.title"/>
                     </div>
                     <!-- <div class="thumb">
                         <img src="img/02.webp" alt="Ratchet & Clank" />

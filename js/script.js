@@ -47,6 +47,12 @@ const miaApp = createApp({
             } else {
                 this.slideIndex--;
             }
+        },
+        syncIndex() {
+            //this.slideIndex === 
         }
+    },
+    mounted() {
+        setInterval(this.slideUp, 8000);
     }
 }).mount('#app');
