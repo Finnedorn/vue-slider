@@ -49,7 +49,7 @@ const miaApp = createApp({
             }
         },
         syncIndex(indice) {
-            this.indice === this.slideIndex
+            this.slideIndex = indice
         }
     },
     mounted() {
