@@ -48,8 +48,8 @@ const miaApp = createApp({
                 this.slideIndex--;
             }
         },
-        syncIndex() {
-            this.index === this.slideIndex
+        syncIndex(indice) {
+            this.indice === this.slideIndex
         }
     },
     mounted() {
