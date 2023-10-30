@@ -34,7 +34,7 @@
                     </div>
                     <div class="next" @click="slideUp">
                     </div>
-                    <div :class="[slideIndex === index ?'thumb active':'thumb']" v-for="(el,index) in slides" @click="syncIndex">
+                    <div :class="[slideIndex === index ?'thumb active':'thumb']" v-for="(el,index) in slides" @click="syncIndex(index)">
                         <img :src="el.image" :alt="el.title"/>
                     </div>
                     <!-- <div class="thumb">
