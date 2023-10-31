@@ -14,7 +14,15 @@
     <div id="app">
 
         <div class="container">
-            <div class="slider-wrapper" tabindex="0">
+            <!-- ora che ho settato un tabindex posos aggiungere gli eventi di key up e down -->
+            <div class="slider-wrapper" tabindex="0"
+            @mouseleave="startAutoplay" 
+            @mouseover="stopAutoplay"
+            @focus="stopAutoplay"
+            @blur="startAutoplay"
+            @keyup.up="slideDown"
+            @key.down="slideUp"
+            >
 
                 <div class="item">
                     <img :src="slides[slideIndex].image" :alt="slides[slideIndex].title" />
